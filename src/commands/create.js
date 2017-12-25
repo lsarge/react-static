@@ -23,6 +23,7 @@ export default async () => {
       name: 'name',
       message: 'What should we name this project?',
       default: 'my-static-site',
+      filter: name => name.trim(),
     },
     {
       type: 'autocomplete',
